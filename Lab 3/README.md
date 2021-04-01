@@ -71,7 +71,7 @@ Create a system that runs on the Raspberry Pi that takes in one or more sensors 
 
 ## Share your idea sketches with Zoom Room mates and get feedback
 
-*what was the feedback? Who did it come from?*
+Brian: first i will say, it was a bit hard to understand her voice, in the first part (before you said your ID number) .... Also if the system didnt recognize the ID, it should ask the user to try again before asking the user to re-register
 
 ## Prototype your system
 
