@@ -81,7 +81,7 @@ a = "Welcome to \n the Dance Dance \n Revolution Game\n The game begins now"
 draw.text((x, y), a, font=font, fill="#FFFFFF")
 y += font.getsize(a)[1]
 disp.image(image, rotation)
-time.sleep(1)
+time.sleep(2)
 draw.rectangle((0, 0, width, height), outline=0, fill=(0, 0, 0))
 disp.image(image, rotation)
 
@@ -108,9 +108,9 @@ while True:
         while not (left.value or right.value):
             time.sleep(0.01)
         if right.value:
-            c = "Game Over"
+            c = "\n Game Over"
             draw.text((x, y), c, font=font, fill="#FF00FF")
-            y = font.getsize(c)[1]
+            y += font.getsize(c)[1]
             disp.image(image, rotation)
             break
         draw.rectangle((0, 0, width, height), outline=0, fill=(0, 0, 0))
@@ -124,9 +124,9 @@ while True:
         while not (left.value or right.value):
             time.sleep(0.01)
         if left.value:
-            e = "Game Over"
+            e = "\n Game Over"
             draw.text((x, y), e, font=font, fill="#FF00FF")
-            y = font.getsize(e)[1]
+            y += font.getsize(e)[1]
             disp.image(image, rotation)
             break
         draw.rectangle((0, 0, width, height), outline=0, fill=(0, 0, 0))
