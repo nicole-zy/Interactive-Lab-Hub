@@ -90,7 +90,7 @@ a = "Welcome to \n Dance Dance \nRevolution Game"
 draw.text((x, y), a, font=font, fill="#FFFFFF")
 y += font.getsize(a)[1]
 disp.image(image, rotation)
-time.sleep(0.1)
+time.sleep(1)
 draw.rectangle((0, 0, width, height), outline=0, fill=(0, 0, 0))
 disp.image(image, rotation)
 handle_speak("Welcome to Dance Dance revolution game.")
