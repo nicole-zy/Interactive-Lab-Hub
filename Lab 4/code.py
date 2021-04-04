@@ -1,6 +1,7 @@
 import time
 import board
 import busio
+import random
 
 import adafruit_mpr121
 
