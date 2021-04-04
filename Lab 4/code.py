@@ -13,10 +13,10 @@ left = mpr121[6]
 right = mpr121[11]
 
 while True:
-    for i in range(12):
-        if mpr121[i].value:
-            print(f"Banana {i} touched!")
-    time.sleep(0.25)  # Small delay to keep from spamming output messages.
+#     for i in range(12):
+#         if mpr121[i].value:
+#             print(f"Banana {i} touched!")
+#     time.sleep(0.25)  # Small delay to keep from spamming output messages.
    
     direction = random.randint(1, 2)
     if direction == 1:
