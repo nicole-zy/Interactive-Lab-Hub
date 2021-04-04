@@ -103,7 +103,7 @@ while True:
             draw.text((x, y), "Game over", font=font, fill="#0000FF")
             break
     else:
-        pdraw.text((x, y), "Right", font=font, fill="#0000FF")
+        draw.text((x, y), "Right", font=font, fill="#0000FF")
         time.sleep(0.1)
         while not (left.value or right.value):
             time.sleep(0.01)
