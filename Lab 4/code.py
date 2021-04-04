@@ -22,13 +22,13 @@ while True:
     if direction == 1:
         print("left")
         while not (left.value or right.value):
-            print("..")
+            time.sleep(0.4)
         if right.value:
             print("Error - Game lost")
     else:
         print("right")
         while not (left.value or right.value):
-            print("..")
+            time.sleep(0.4)
         if left.value:
             print("Error - Game lost")
 
