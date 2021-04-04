@@ -19,18 +19,19 @@ while True:
 #     time.sleep(0.25)  # Small delay to keep from spamming output messages.
    
     direction = random.randint(1, 2)
-    time.sleep(0.2)
     if direction == 1:
         print("left")
+        time.sleep(0.1)
         while not (left.value or right.value):
-            time.sleep(0.4)
+            time.sleep(0.2)
         if right.value:
             print("Error - Game lost")
             break
     else:
         print("right")
+        time.sleep(0.1)
         while not (left.value or right.value):
-            time.sleep(0.4)
+            time.sleep(0.2)
         if left.value:
             print("Error - Game lost")
             break
