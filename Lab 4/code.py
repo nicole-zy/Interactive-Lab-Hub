@@ -20,9 +20,11 @@ while True:
    
     direction = random.randint(1, 2)
     if direction == 1:
-      if right.value:
-        print("Error - Game lost")
+        print("left")
+        if right.value:
+            print("Error - Game lost")
     else:
-      if left.value:
-        print("Error - Game lost")
+        print("right")
+        if left.value:
+            print("Error - Game lost")
 
