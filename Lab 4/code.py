@@ -19,6 +19,7 @@ while True:
 #     time.sleep(0.25)  # Small delay to keep from spamming output messages.
    
     direction = random.randint(1, 2)
+    time.sleep(0.2)
     if direction == 1:
         print("left")
         while not (left.value or right.value):
