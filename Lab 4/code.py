@@ -86,12 +86,9 @@ buttonB.switch_to_input()
     # Draw a black filled box to clear the image.
 draw.rectangle((0, 0, width, height), outline=0, fill=0)
 y = top
-a = "Welcome to \n Dance Dance \nRevolution Game"
+a = "Welcome to \n Dance Dance \nRevolution Game\n"
 draw.text((x, y), a, font=font, fill="#FFFFFF")
 y += font.getsize(a)[1]
-disp.image(image, rotation)
-time.sleep(2)
-draw.rectangle((0, 0, width, height), outline=0, fill=(0, 0, 0))
 disp.image(image, rotation)
 handle_speak("Welcome to Dance Dance revolution game.")
 f = "The game begins now!"
