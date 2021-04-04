@@ -93,9 +93,9 @@ disp.image(image, rotation)
 draw.rectangle((0, 0, width, height), outline=0, fill=(0, 0, 0))
 disp.image(image, rotation)
 handle_speak("Welcome to Dance Dance revolution game.")
-a = "The game begins now!"
-draw.text((x, y), a, font=font, fill="#FFFFFF")
-y += font.getsize(a)[1]
+f = "The game begins now!"
+draw.text((x, y), f, font=font, fill="#FFFFFF")
+y += font.getsize(f)[1]
 disp.image(image, rotation)
 handle_speak("The game begins now.")
 time.sleep(2)
