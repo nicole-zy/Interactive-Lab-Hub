@@ -123,6 +123,8 @@ while True:
         while not (left.value or right.value):
             time.sleep(0.01)
         if right.value:
+            draw.rectangle((0, 0, width, height), outline=0, fill=(0, 0, 0))
+            disp.image(image, rotation)
             c = "\n Game Over"
             draw.text((x, y), c, font=font, fill="#FF00FF")
             y += font.getsize(c)[1]
@@ -140,6 +142,8 @@ while True:
         while not (left.value or right.value):
             time.sleep(0.01)
         if left.value:
+            draw.rectangle((0, 0, width, height), outline=0, fill=(0, 0, 0))
+            disp.image(image, rotation)
             e = "\n Game Over"
             draw.text((x, y), e, font=font, fill="#FF00FF")
             y += font.getsize(e)[1]
