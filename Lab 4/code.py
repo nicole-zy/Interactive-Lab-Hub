@@ -25,10 +25,12 @@ while True:
             time.sleep(0.4)
         if right.value:
             print("Error - Game lost")
+            break
     else:
         print("right")
         while not (left.value or right.value):
             time.sleep(0.4)
         if left.value:
             print("Error - Game lost")
+            break
 
