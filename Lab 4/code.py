@@ -11,7 +11,18 @@ import board
 from PIL import Image, ImageDraw, ImageFont
 import adafruit_rgb_display.st7789 as st7789
 import os
+import RPi.GPIO as GPIO
 
+from PIL import Image, ImageDraw, ImageFont
+from subprocess import call, Popen
+
+cwd = os.getcwd()
+
+
+def handle_speak(val):
+    subprocess.run(["sh", "GoogleTTS_demo.sh", val])
+    # call(f"espeak -ven -k5 -s150 --stdout '{val}' | aplay", shell=True)
+    time.sleep(0.5)
 
 # Configuration for CS and DC pins (these are FeatherWing defaults on M0/M4):
 cs_pin = digitalio.DigitalInOut(board.CE0)
@@ -75,7 +86,9 @@ buttonB.switch_to_input()
     # Draw a black filled box to clear the image.
 draw.rectangle((0, 0, width, height), outline=0, fill=0)
 y = top
-a = "Welcome to \n the Dance Dance \n Revolution Game\n The game begins now"
+a = "Welcome to \n Dance Dance \n Revolution Game\n The game begins now"
+handle_speak("Welcome to Dance Dance revolution game.")
+handle_speak("The game begins now.")
 
 
 draw.text((x, y), a, font=font, fill="#FFFFFF")
@@ -112,6 +125,7 @@ while True:
             draw.text((x, y), c, font=font, fill="#FF00FF")
             y += font.getsize(c)[1]
             disp.image(image, rotation)
+            handle_speak("Game over")
             break
         draw.rectangle((0, 0, width, height), outline=0, fill=(0, 0, 0))
         disp.image(image, rotation)
@@ -128,6 +142,7 @@ while True:
             draw.text((x, y), e, font=font, fill="#FF00FF")
             y += font.getsize(e)[1]
             disp.image(image, rotation)
+            handle_speak("Game over")
             break
         draw.rectangle((0, 0, width, height), outline=0, fill=(0, 0, 0))
         disp.image(image, rotation)
