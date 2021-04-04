@@ -80,7 +80,7 @@ a = "Welcome to the Dance Dance Revolution Game\n The game begins now"
 
 draw.text((x, y), a, font=font, fill="#0000FF")
 y += font.getsize(a)[1]
-
+disp.image(image, rotation)
 
 i2c = busio.I2C(board.SCL, board.SDA)
 
@@ -120,4 +120,4 @@ while True:
             draw.text((x, y), e, font=font, fill="#0000FF")
             y += font.getsize(e)[1]
             break
-
+disp.image(image, rotation)
