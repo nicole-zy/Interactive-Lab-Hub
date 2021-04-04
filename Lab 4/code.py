@@ -23,7 +23,7 @@ while True:
         print("left")
         time.sleep(0.1)
         while not (left.value or right.value):
-            time.sleep(0.2)
+            time.sleep(0.01)
         if right.value:
             print("Error - Game lost")
             break
@@ -31,7 +31,7 @@ while True:
         print("right")
         time.sleep(0.1)
         while not (left.value or right.value):
-            time.sleep(0.2)
+            time.sleep(0.01)
         if left.value:
             print("Error - Game lost")
             break
