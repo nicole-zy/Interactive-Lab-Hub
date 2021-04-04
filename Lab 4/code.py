@@ -18,7 +18,7 @@ while True:
             print(f"Banana {i} touched!")
     time.sleep(0.25)  # Small delay to keep from spamming output messages.
    
-    direction = random.randit(1, 2)
+    direction = random.randint(1, 2)
     if direction == 1:
       if right.value:
         print("Error - Game lost")
