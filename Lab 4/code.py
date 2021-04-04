@@ -86,7 +86,7 @@ buttonB.switch_to_input()
     # Draw a black filled box to clear the image.
 draw.rectangle((0, 0, width, height), outline=0, fill=0)
 y = top
-a = "Welcome to \n Dance Dance \n Revolution Game\n The game begins now"
+a = "Welcome to \n Dance Dance \n Revolution Game\n The game begins now!"
 
 
 
@@ -126,7 +126,7 @@ while True:
             draw.rectangle((0, 0, width, height), outline=0, fill=(0, 0, 0))
             disp.image(image, rotation)
             c = "\n Game Over"
-            draw.text((x, y), c, font=font, fill="#FF00FF")
+            draw.text((x, y), c, font=font, fill="#C51A4A")
             y += font.getsize(c)[1]
             disp.image(image, rotation)
             handle_speak("Game over")
@@ -145,7 +145,7 @@ while True:
             draw.rectangle((0, 0, width, height), outline=0, fill=(0, 0, 0))
             disp.image(image, rotation)
             e = "\n Game Over"
-            draw.text((x, y), e, font=font, fill="#FF00FF")
+            draw.text((x, y), e, font=font, fill="#C51A4A")
             y += font.getsize(e)[1]
             disp.image(image, rotation)
             handle_speak("Game over")
