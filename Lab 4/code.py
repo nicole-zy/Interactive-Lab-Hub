@@ -77,7 +77,9 @@ draw.rectangle((0, 0, width, height), outline=0, fill=0)
 y = top
 a = "Welcome to the Dance Dance Revolution Game\n The game begins now"
 
+
 draw.text((x, y), a, font=font, fill="#0000FF")
+y += font.getsize(a)[1]
 
 
 i2c = busio.I2C(board.SCL, board.SDA)
@@ -95,19 +97,27 @@ while True:
    
     direction = random.randint(1, 2)
     if direction == 1:
-        draw.text((x, y), "left", font=font, fill="#0000FF")
+        b = "left"
+        draw.text((x, y), b, font=font, fill="#0000FF")
+        y += font.getsize(b)[1]
         time.sleep(0.1)
         while not (left.value or right.value):
             time.sleep(0.01)
         if right.value:
-            draw.text((x, y), "Game over", font=font, fill="#0000FF")
+            c = "Game Over"
+            draw.text((x, y), c, font=font, fill="#0000FF")
+            y += font.getsize(c)[1]
             break
     else:
-        draw.text((x, y), "Right", font=font, fill="#0000FF")
+        d ="Right"
+        draw.text((x, y), d, font=font, fill="#0000FF")
+        y += font.getsize(d)[1]
         time.sleep(0.1)
         while not (left.value or right.value):
             time.sleep(0.01)
         if left.value:
-            draw.text((x, y), "Game over", font=font, fill="#0000FF")
+            e = "Game Over"
+            draw.text((x, y), e, font=font, fill="#0000FF")
+            y += font.getsize(e)[1]
             break
 
