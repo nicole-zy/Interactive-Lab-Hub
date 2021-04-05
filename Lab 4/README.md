@@ -132,12 +132,16 @@ Make a paper display for your project that communicates the state of the Pi and 
 
 ![alt text](https://github.com/nicole-zy/Interactive-Lab-Hub/blob/Spring2021/Lab%204/1.png?width=1500&height=1100) 
 
+First we just used paper to design the display. We drew a dance floor and pretended the sensors were attached. And because this is a game designed for fingers (instead of whole bodies like the original game) we had to make sure the left and right sensors were close enough that the player didn't need to significantly move in during game play, but also far enough to provide a challenge. When designed the box where the pi would sit, we needed to make sure it was at a good position where the player wasn't sitting awkwardly in order to see the screen and play the game at the same time, but we also wanted to make sure we hid all the wires and bits and pieces behind the scenes. 
+
 **b. Make a video of your paper display in action.**
 
 Video: 
 https://drive.google.com/file/d/1ltNlWnclFwYRP54Q4Q9FjGbJpE1IbWqA/view?usp=sharing
 
 **c. Explain the rationale for the design.** (e.g. Does it need to be a certain size or form or need to be able to be seen from a certain distance?)
+
+Because the game play is done seated, we don't need to cover that much area with our design. The dance floor should be significantly close to the hidden pi and the screen so that the player can see the commands on the screen easily. We cut out a screen on the cardboard so the screen would be visible, but none of the wiring or other parts of the pi would be. 
 
 ### Part D
 ### Materiality
@@ -148,7 +152,11 @@ Design a system with the Pi and anything from your kit with a focus on form, and
 
 **a. document the material prototype.** Include candidates that were considered even if they were set aside later.
 
+The material prototype is as shown above, using paper and cardboard. It has the ideal weight, and shape needed for a sit down game.
+
 **b. explain the selection.**
+
+The paper used for the dance floor is thin and lightweight so the sensors are easily readable during game play. And the cardboard box is filled with irrelevant items to ensure the box itself is not so lightweight that it moves around and hinders gameplay.
 
 ### Part 2.
 
@@ -163,9 +171,11 @@ Reiterating:
 3. "Works like" prototypes: show us what the device can do
 4. "Acts like" prototypes: videos/storyboards/other means of showing how a person would interact with the device
 
-Video:
+Here's the video of the final game in action:
 https://drive.google.com/file/d/1bRBjE6KFu91s-hK_4e-46xwk3FrllCr5/view?usp=sharing
 
-5. Submit these in the lab 4 folder of your class [Github page], either as links or uploaded files. Each group member should post their own copy of the work to their own Lab Hub, even if some of the work is the same for each person in the group.
+Possible next iterations:
+
+For next iterations of the system and game, we are thinking of introducing levels, so that a harder level of a game would include "up" and "down" along with "left" and "right." Also, another level could include just a voice saying the commands instead of it showing on the screen to include a new mode of interaction.
 
 
