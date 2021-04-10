@@ -67,12 +67,12 @@ Create a system that runs on the Raspberry Pi that takes in one or more sensors 
 ## Prep for Part 2
 
 1. Sketch ideas for what you'll work on in lab on Wednesday.
+![alt text](https://github.com/nicole-zy/Interactive-Lab-Hub/blob/Spring2021/Lab%203/IMG_0667.jpg)
 
 ## Share your idea sketches with Zoom Room mates and get feedback
 
-*what was the feedback? Who did it come from?*
+Brian: first i will say, it was a bit hard to understand her voice, in the first part (before you said your ID number) .... Also if the system didnt recognize the ID, it should ask the user to try again before asking the user to re-register
 
-![alt text](https://github.com/nicole-zy/Interactive-Lab-Hub/blob/Spring2021/Lab%203/1.jpg)
 ## Prototype your system
 
 The system should:
@@ -80,9 +80,9 @@ The system should:
 * use one or more sensors
 * require participants to speak to it. 
 
-*Document how the system works*
+We use two buttons (red and green) as the sensors and have the speaker and the microphone connected to the Pi to mimic the medical hotline system. The goal is to make appointment with the doctors autonomously. The system will ask questions like “Have you registered before?”, “What’s your phone number?” and etc. The participant can press the green button for yes and the red button for no, and can also speak to the microphone to answer the question.
 
-*Include videos or screencaptures of both the system and the controller.*
+https://drive.google.com/file/d/1LtZDsXPwL0k3kdAggsy1rjUuUYvEcYX0/view?usp=sharing
 
 ## Test the system
 Try to get at least two people to interact with your system. (Ideally, you would inform them that there is a wizard _after_ the interaction, but we recognize that can be hard.)
@@ -90,18 +90,23 @@ Try to get at least two people to interact with your system. (Ideally, you would
 Answer the following:
 
 ### What worked well about the system and what didn't?
-*your answer here*
+Worked well: The instruction the system performed was pretty clear and easy to follow. At first we thought the automated voice was too harsh and hard to understand, so we were easily able to switch to a voice from the demo that we thought was better.
+
+Not worked well: Because we don't know how long it will take for someone to respond, the time period for participants to respond between some questions are too short. We tried to play with the speech to text functionality but we couldn't get it to work accurately at all, so we hard coded the pauses the system took where it would actually be waiting for someone to respond.
+
 
 ### What worked well about the controller and what didn't?
 
-*your answer here*
+Worked well: Easy to use. We used a lot of the text to speech functionality to make sure the user knew exactly what to expect and how to interact with the system.
+
+Not worked well: Sometimes the buttons don’t work. We were having a hard time getting the Qwiic buttons to accurately display as outputs, even after using i2cdetect. It seemed to connect on and off and randomly, which we tried to troubleshoot but couldn't find a good explanation for.
+
 
 ### What lessons can you take away from the WoZ interactions for designing a more autonomous version of the system?
 
-*your answer here*
+We found it hard to make the system to have a natural conversation as a human and there are some specific verbal cues that we have't captured. For instance, the change in volume and in tone can change the dynamic of the conversation. Additionally, it would have really helped to use the speech to text functionality as it would help guide the conversation more accurately. We are still trying to figure that out.
 
 
 ### How could you use your system to create a dataset of interaction? What other sensing modalities would make sense to capture?
 
-*your answer here*
-
+There can be a screen showing what information has the hotline recorded or a live transcript. It could also be useful to sense the tone of the individual interacting with the automated machine to gauge for any misunderstandings or frustrations they might have with the system, so we can iterate on it and make it more user friendly.
