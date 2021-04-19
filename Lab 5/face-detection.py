@@ -149,7 +149,7 @@ while(True):
        for (ex,ey,ew,eh) in eyes:
            cv2.rectangle(roi_color,(ex,ey),(ex+ew,ey+eh),(0,255,0),2)
            cv2.putText(img, "Your eyes are open now. Take a pic?",(50,50),cv2.FONT_HERSHEY_SIMPLEX,1,(255,0,),2,cv2.LINE_AA)
-           if buttonA.value:
+           if buttonA.value and not buttonB.value:
                cv2.imwrite('pic' + str(i) + '.jpg',gray)
                i += 1
                time.sleep(0.2)
