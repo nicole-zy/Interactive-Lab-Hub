@@ -133,7 +133,7 @@ else:
       img = cv2.imread("../data/test.jpg")
       print("Using default image.")
 
-
+i = 0
 while(True):
    if webCam:
       ret, img = cap.read()
