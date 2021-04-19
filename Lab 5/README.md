@@ -119,7 +119,7 @@ As a note, the global Python install contains also a PyTorch installation. That 
 
 ### Part B
 ### Construct a simple interaction.
-
+![alt text](https://github.com/nicole-zy/Interactive-Lab-Hub/blob/Spring2021/Lab%205/modified.png?width=1500&height=1100)
 
 Pick one of the models you have tried, pick a class of objects, and experiment with prototyping an interaction.
 This can be as simple as the boat detector earlier.
