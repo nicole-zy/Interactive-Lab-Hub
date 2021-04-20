@@ -84,6 +84,12 @@ pi@ixe00:~/openCV-examples $ tree -l
     └── ssd_mobilenet_v2_coco_2018_03_29.pbtxt
 ```
 #### Filtering, FFTs, and Time Series data. (beta, optional)
+
+![alt text](https://github.com/nicole-zy/Interactive-Lab-Hub/blob/Spring2021/Lab%205/contour.png?width=1500&height=1100) 
+![alt text](https://github.com/nicole-zy/Interactive-Lab-Hub/blob/Spring2021/Lab%205/face.png?width=1500&height=1100)
+![alt text](https://github.com/nicole-zy/Interactive-Lab-Hub/blob/Spring2021/Lab%205/object.png?width=1500&height=1100)
+![alt text](https://github.com/nicole-zy/Interactive-Lab-Hub/blob/Spring2021/Lab%205/flow.png?width=1500&height=1100)
+
 Additional filtering and analysis can be done on the sensors that were provided in the kit. For example, running a Fast Fourier Transform over the IMU data stream could create a simple activity classifier between walking, running, and standing.
 
 Using the set up from the [Lab 3 demo](https://github.com/FAR-Lab/Interactive-Lab-Hub/tree/Spring2021/Lab%203/demo) and the accelerometer, try the following:
@@ -116,20 +122,23 @@ As a note, the global Python install contains also a PyTorch installation. That 
 ### Part B
 ### Construct a simple interaction.
 
+
 Pick one of the models you have tried, pick a class of objects, and experiment with prototyping an interaction.
 This can be as simple as the boat detector earlier.
 Try out different interactions outputs and inputs.
 **Describe and detail the interaction, as well as your experimentation.**
+![alt text](https://github.com/nicole-zy/Interactive-Lab-Hub/blob/Spring2021/Lab%205/modified.png?width=1500&height=1100)
+We used the face detection. The device detects whether the participant's eyes are open or not. If the participant's eyes are open, the device will ask "Your eyes are open, take a pic?". Then the participant can take a picture by pressing the button
 
 ### Part C
 ### Test the interaction prototype
 
 Now flight test your interactive prototype and **note your observations**:
 For example:
-1. When does it what it is supposed to do?
-1. When does it fail?
-1. When it fails, why does it fail?
-1. Based on the behavior you have seen, what other scenarios could cause problems?
+1. When does it what it is supposed to do? The device asks if the participant to take a picture when the participant opens the eyes.
+1. When does it fail? When the participant close the eyes.
+1. When it fails, why does it fail? The face detection can't detect the open eyes.
+1. Based on the behavior you have seen, what other scenarios could cause problems? When the participant opens one eye and closes the other one.
 
 **Think about someone using the system. Describe how you think this will work.**
 1. Are they aware of the uncertainties in the system?
