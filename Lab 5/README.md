@@ -83,12 +83,24 @@ pi@ixe00:~/openCV-examples $ tree -l
     ├── HowToUse.md
     └── ssd_mobilenet_v2_coco_2018_03_29.pbtxt
 ```
-#### Filtering, FFTs, and Time Series data. (beta, optional)
 
+We played around with a few of the different detection properties. 
+
+Here is us trying out the contour:
 ![alt text](https://github.com/nicole-zy/Interactive-Lab-Hub/blob/Spring2021/Lab%205/contour.png?width=1500&height=1100) 
+
+Here we tried out the face detection:
 ![alt text](https://github.com/nicole-zy/Interactive-Lab-Hub/blob/Spring2021/Lab%205/face.png?width=1500&height=1100)
+
+Here we tried simple object detection with a water bottle:
 ![alt text](https://github.com/nicole-zy/Interactive-Lab-Hub/blob/Spring2021/Lab%205/object.png?width=1500&height=1100)
+
+Here we experimented with the flow. It took us a while to understand that it was following the camera movement, instead of an object or person movement:
 ![alt text](https://github.com/nicole-zy/Interactive-Lab-Hub/blob/Spring2021/Lab%205/flow.png?width=1500&height=1100)
+
+
+
+#### Filtering, FFTs, and Time Series data. (beta, optional)
 
 Additional filtering and analysis can be done on the sensors that were provided in the kit. For example, running a Fast Fourier Transform over the IMU data stream could create a simple activity classifier between walking, running, and standing.
 
@@ -135,16 +147,24 @@ We used the face detection. The device detects whether the participant's eyes ar
 
 Now flight test your interactive prototype and **note your observations**:
 For example:
-1. When does it what it is supposed to do? The device asks if the participant to take a picture when the participant opens the eyes.
-1. When does it fail? When the participant close the eyes.
-1. When it fails, why does it fail? The face detection can't detect the open eyes.
-1. Based on the behavior you have seen, what other scenarios could cause problems? When the participant opens one eye and closes the other one.
+1. When does it what it is supposed to do? 
+The device asks if the participant to take a picture when the participant opens the eyes.
+2. When does it fail? 
+When the participant's eyes are closed, or obstructed, or a face is not detected.
+3. When it fails, why does it fail? 
+The main idea behind the system is to detect a face, and to detect eyes so that a good picture can be taken. This will fail, correctly, if this conditions are not met. 
+4. Based on the behavior you have seen, what other scenarios could cause problems? 
+If the user, for example, makes funny faces on purpose for the picture, it is likely that the detection software will not prompt the user or allow them to take a picture because the conditions are not met. Also, because of the nature of the code, it is also likely that the prompt to take a picture shows up for less than a second at a time because the rendering takes a while. This would not be user friendly as it would end up being harder for the user to take a picture.
 
 **Think about someone using the system. Describe how you think this will work.**
 1. Are they aware of the uncertainties in the system?
-1. How bad would they be impacted by a miss classification?
-1. How could change your interactive system to address this?
-1. Are there optimizations you can try to do on your sense-making algorithm.
+The user is aware of the conditions that need to be met before they are able to take a picture. However, the uncertainty of the speed at which the detection is performed can lead to issues during production.
+2. How bad would they be impacted by a miss classification?
+The consequences wouldn't be terrible if a picture was taken when the user wasn't ready, as deleting a picture is fairly straightforward. If the detection software takes too long and the user is unable to take a picture all together, that would be a pretty negative impact as the purpose of the system as a whole would be defeated.
+3. How could change your interactive system to address this?
+We could change our system to automatically snap pictures when conditions are met. When the user tries to take a picture and they have to move to click the button, sometimes the face form alters and if the detection software processes that too slowly and cannot redirect the face and eyes fast enough, it would cause the picture not to be taken. With automatic picture taking, this fault is taken care of.
+4. Are there optimizations you can try to do on your sense-making algorithm.
+We could include algorithms from the teachable machines portions to account for more conditions that could be met in order to take a picture. This could include making sure masks are off, etc.
 
 ### Part D
 ### Characterize your own Observant system
@@ -152,6 +172,7 @@ For example:
 Now that you have experimented with one or more of these sense-making systems **characterize their behavior**.
 During the lecture, we mentioned questions to help characterize a material:
 * What can you use X for?
+We can use our system to make it easier for people to snap pictures when their hands are being used or when they are far from the camera.
 * What is a good environment for X?
 * What is a bad environment for X?
 * When will X break?
