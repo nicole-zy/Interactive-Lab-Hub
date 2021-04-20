@@ -185,6 +185,7 @@ We can use our system to make it easier for people to snap pictures when their h
 ### Part 2.
 
 Following exploration and reflection from Part 1, finish building your interactive system, and demonstrate it in use with a video.
-
+when the camera is stablized, the quality of the detection improves significantly.
+![alt text](https://github.com/nicole-zy/Interactive-Lab-Hub/blob/Spring2021/Lab%205/stable.jpg?width=1500&height=1100)
 **Include a short video demonstrating the finished result.**
 
