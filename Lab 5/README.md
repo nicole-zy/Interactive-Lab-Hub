@@ -179,13 +179,15 @@ We can use our system to make it easier for people to snap pictures when their h
 * When it breaks how will X break?
 * What are other properties/behaviors of X?
 * How does X feel?
+Unstable camera: https://drive.google.com/file/d/1_HV1e8nz-4Y74jzlPzqfG28yZLCzgmdI/view?usp=sharing
+The object is too far away: https://drive.google.com/file/d/1KzVB4p1OHxm7lzeOrHMKOpyz21vZPGJK/view?usp=sharing
 
-**Include a short video demonstrating the answers to these questions.**
 
 ### Part 2.
 
 Following exploration and reflection from Part 1, finish building your interactive system, and demonstrate it in use with a video.
 when the camera is stablized, the quality of the detection improves significantly.
 ![alt text](https://github.com/nicole-zy/Interactive-Lab-Hub/blob/Spring2021/Lab%205/stable.jpg?width=1500&height=1100)
-**Include a short video demonstrating the finished result.**
+
+
 
