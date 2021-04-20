@@ -158,8 +158,10 @@ During the lecture, we mentioned questions to help characterize a material:
 * When it breaks how will X break?
 * What are other properties/behaviors of X?
 * How does X feel?
+
 Unstable camera: https://drive.google.com/file/d/1_HV1e8nz-4Y74jzlPzqfG28yZLCzgmdI/view?usp=sharing
-The object is too far away: https://drive.google.com/file/d/1KzVB4p1OHxm7lzeOrHMKOpyz21vZPGJK/view?usp=sharing
+
+The participant is too far away: https://drive.google.com/file/d/1KzVB4p1OHxm7lzeOrHMKOpyz21vZPGJK/view?usp=sharing
 
 
 ### Part 2.
