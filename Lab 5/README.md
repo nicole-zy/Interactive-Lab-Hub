@@ -173,6 +173,7 @@ Now that you have experimented with one or more of these sense-making systems **
 During the lecture, we mentioned questions to help characterize a material:
 * What can you use X for? \n
 We can use our system to make it easier for people to snap pictures when their hands are being used or when they are far from the camera.
+
 * What is a good environment for X? \n
 A good environment for this system is when there are no obstructions, the lighting is good, and the camera is at a decent length from the users.
 * What is a bad environment for X? \n
@@ -188,7 +189,8 @@ The build and look of the system as it is right now is very raw. We are just hol
 
 
 Unstable camera: https://drive.google.com/file/d/1_HV1e8nz-4Y74jzlPzqfG28yZLCzgmdI/view?usp=sharing
-The object is too far away: https://drive.google.com/file/d/1KzVB4p1OHxm7lzeOrHMKOpyz21vZPGJK/view?usp=sharing
+
+The participant is too far away: https://drive.google.com/file/d/1KzVB4p1OHxm7lzeOrHMKOpyz21vZPGJK/view?usp=sharing
 
 
 ### Part 2.
