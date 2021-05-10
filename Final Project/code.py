@@ -117,14 +117,14 @@ while True:
 #         if mpr121[i].value:
 #             print(f"Banana {i} touched!")
 #     time.sleep(0.25)  # Small delay to keep from spamming output messages.
-   
+    time.sleep(0.1)
     direction = random.randint(1, 4)
     if direction == 1:
         b = "left"
         draw.text((x, y), b, font=font, fill="#FFFFFF")
         y = font.getsize(b)[1]
         disp.image(image, rotation)
-        time.sleep(0.1)
+        time.sleep(0.2)
         while not (left.value or right.value or up.value or down.value):
             time.sleep(0.01)
         if right.value or up.value or down.value:
