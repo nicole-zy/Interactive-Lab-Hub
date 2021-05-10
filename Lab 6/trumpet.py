@@ -16,6 +16,7 @@ import uuid
 topic = 'IDD/music'
 song = 0
 notes_rock_you = [1, 3, 2, 1]
+notes = []
 
 # this is the callback that gets called each time a message is received
 def on_message(cleint, userdata, msg):
@@ -24,7 +25,7 @@ def on_message(cleint, userdata, msg):
     print(message)
     if message == 'Rock you':
         song = 0
-	notes = notes_rock_you
+        notes = notes_rock_you
 	# you can filter by topics
 	# if msg.topic == 'IDD/some/other/topic': do thing
 
