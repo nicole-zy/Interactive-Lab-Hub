@@ -125,7 +125,7 @@ while True:
     else:
         display = notes
     for i in notes:
-	text += str(i)
+        text += str(i)
     d = text
     draw.text((x, y), d, font=font, fill="#FFFFFF")
     y = font.getsize(d)[1]
