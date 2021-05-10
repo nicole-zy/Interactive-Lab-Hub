@@ -122,14 +122,14 @@ d = "Play Rock You"
 draw.text((x, y), d, font=font, fill="#FFFFFF")
 y += font.getsize(d)[1]
 disp.image(image, rotation)
-time.sleep(1)
+time.sleep(10)
 while True:
     if not notes_rock_you:
         display = "Song finished"
         client.loop()
     else:
         display = notes
-    
+    client.publish("IDD/music", "Song Finished!")
     if message == 'Rock you':
         for i in notes_rock_you:
             text += str(i)
