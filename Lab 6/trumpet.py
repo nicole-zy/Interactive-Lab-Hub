@@ -15,7 +15,7 @@ import uuid
 
 topic = 'IDD/music'
 song = 0
-notes = [1, 3, 2, 1]
+notes_rock_you = [1, 3, 2, 1]
 
 # this is the callback that gets called each time a message is received
 def on_message(cleint, userdata, msg):
@@ -24,6 +24,7 @@ def on_message(cleint, userdata, msg):
     print(message)
     if message == 'Rock you':
         song = 0
+	notes = notes_rock_you
 	# you can filter by topics
 	# if msg.topic == 'IDD/some/other/topic': do thing
 
@@ -118,7 +119,7 @@ while True:
         display = "Song finished"
         client.loop()
     else:
-        display = 'Playing song now'
+        display = notes
 
     draw.rectangle((0, 0, width, height), outline=0, fill=0)
     draw.text((25, 5), display, font=font, fill="#0000FF")
