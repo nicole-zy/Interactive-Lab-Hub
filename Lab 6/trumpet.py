@@ -17,6 +17,7 @@ topic = 'IDD/music'
 song = 0
 notes_rock_you = [1, 3, 2, 1]
 notes = []
+message = ''
 
 # this is the callback that gets called each time a message is received
 def on_message(cleint, userdata, msg):
@@ -118,17 +119,23 @@ x = 0
 y = top
 text = ''
 while True:
-    print(notes)
-    if not notes:
+    if not notes_rock_you:
         display = "Song finished"
         client.loop()
     else:
         display = notes
+    
     for i in notes_rock_you:
         text += str(i)
+    d = message
+    draw.text((x, y), d, font=font, fill="#FFFFFF")
+    y += font.getsize(d)[1]
+    disp.image(image, rotation)
+    time.sleep(0.1)
+    draw.rectangle((0, 0, width, height), outline=0, fill=0)
     d = text
     draw.text((x, y), d, font=font, fill="#FFFFFF")
-    y = font.getsize(d)[1]
+    y += font.getsize(d)[1]
     disp.image(image, rotation)
     time.sleep(0.1)
     draw.rectangle((0, 0, width, height), outline=0, fill=0)
