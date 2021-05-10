@@ -23,6 +23,7 @@ def on_message(cleint, userdata, msg):
     message = msg.payload.decode('UTF-8')
     print(message)
     if message == 'Rock you':
+        print('same')
         song = 0
         notes = notes_rock_you
 	# you can filter by topics
