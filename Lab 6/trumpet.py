@@ -116,6 +116,7 @@ def on_connect(client, userdata, flags, rc):
 draw.rectangle((0, 0, width, height), outline=0, fill=0)
 x = 0
 y = top
+text = ''
 while True:
     print(notes)
     if not notes:
@@ -123,7 +124,9 @@ while True:
         client.loop()
     else:
         display = notes
-    d = notes
+    for i in notes:
+	text += str(i)
+    d = text
     draw.text((x, y), d, font=font, fill="#FFFFFF")
     y = font.getsize(d)[1]
     disp.image(image, rotation)
