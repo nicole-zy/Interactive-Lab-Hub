@@ -141,9 +141,9 @@ while True:
         time.sleep(0.1)
         draw.rectangle((0, 0, width, height), outline=0, fill=0)
 #     draw.text((25, 5), display, font=font, fill="#0000FF")
-        if notes:
-            client.publish("IDD/music", notes[0])
-	    notes.pop(0)
+        if notes_rock_you:
+            client.publish("IDD/music", notes_rock_you[0])
+            notes_rock_you.pop(0)
 # this is blocking. to see other ways of dealing with the loop
 #  https://www.eclipse.org/paho/index.php?page=clients/python/docs/index.php#network-loop
 client.loop_forever()
