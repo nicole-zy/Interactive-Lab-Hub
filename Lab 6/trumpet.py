@@ -127,7 +127,7 @@ while True:
     
     if message == 'Rock you':
         for i in notes_rock_you:
-	    text += str(i)
+            text += str(i)
         d = message
         draw.text((x, y), d, font=font, fill="#FFFFFF")
         y += font.getsize(d)[1]
