@@ -114,6 +114,8 @@ def on_connect(client, userdata, flags, rc):
 
 
 draw.rectangle((0, 0, width, height), outline=0, fill=0)
+x = 0
+y = top
 while True:
     print(notes)
     if not notes:
