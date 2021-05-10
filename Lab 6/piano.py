@@ -30,9 +30,9 @@ i2c = busio.I2C(board.SCL, board.SDA)
 # Create the SSD1306 OLED class.
 # The first two parameters are the pixel width and pixel height.  Change these
 # to the right size for your display!
-oled = adafruit_ssd1306.SSD1306_I2C(128, 32, i2c)
-image = Image.new("1", (oled.width, oled.height))
-draw = ImageDraw.Draw(image)
+# oled = adafruit_ssd1306.SSD1306_I2C(128, 32, i2c)
+# image = Image.new("1", (oled.width, oled.height))
+# draw = ImageDraw.Draw(image)
 
 music_script = deque()
 
@@ -96,9 +96,9 @@ client2.connect(
 #     pygame.mixer.music.play()
 
 # start with a blank screen
-oled.fill(0)
+# oled.fill(0)
 # we just blanked the framebuffer. to push the framebuffer onto the display, we call show()
-oled.show()
+# oled.show()
 while True:
     if not music_script:
         next_text = 'DONE'
@@ -106,11 +106,11 @@ while True:
     else:
         next_text = 'Play ' + str(music_script[0])
 
-    draw.rectangle((0, 0, oled.width, oled.height), outline=0, fill=0)
-    draw.text((25, 5), next_text, font=font, fill="#0000FF")
-    oled.image(image)
+#     draw.rectangle((0, 0, oled.width, oled.height), outline=0, fill=0)
+#     draw.text((25, 5), next_text, font=font, fill="#0000FF")
+#     oled.image(image)
     # show all the changes we just made
-    oled.show()
+#     oled.show()
     if music_script:
         client.publish("IDD/John", music_script[0])
         music_script.popleft()
