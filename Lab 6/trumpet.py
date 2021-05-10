@@ -131,7 +131,7 @@ while True:
     draw.text((x, y), d, font=font, fill="#FFFFFF")
     y += font.getsize(d)[1]
     disp.image(image, rotation)
-    time.sleep(0.1)
+    time.sleep(1)
     draw.rectangle((0, 0, width, height), outline=0, fill=0)
     d = text
     draw.text((x, y), d, font=font, fill="#FFFFFF")
