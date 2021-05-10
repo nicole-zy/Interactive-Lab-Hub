@@ -20,7 +20,6 @@ notes = []
 
 # this is the callback that gets called each time a message is received
 def on_message(cleint, userdata, msg):
-    print(msg)
     message = msg.payload.decode('UTF-8')
     print(message)
     if message == 'Rock you':
