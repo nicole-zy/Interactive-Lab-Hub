@@ -19,6 +19,7 @@ notes = [1, 3, 2, 1]
 
 # this is the callback that gets called each time a message is received
 def on_message(cleint, userdata, msg):
+    print(msg)
     message = msg.payload.decode('UTF-8')
     print(message)
     if message == 'Rock you':
@@ -112,6 +113,7 @@ def on_connect(client, userdata, flags, rc):
 
 draw.rectangle((0, 0, width, height), outline=0, fill=0)
 while True:
+    print('in loop')
     if not notes:
         display = "Song finished"
         client.loop()
