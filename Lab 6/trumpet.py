@@ -139,7 +139,7 @@ while True:
     disp.image(image, rotation)
     time.sleep(0.1)
     draw.rectangle((0, 0, width, height), outline=0, fill=0)
-    draw.text((25, 5), display, font=font, fill="#0000FF")
+#     draw.text((25, 5), display, font=font, fill="#0000FF")
     if notes:
         client.publish("IDD/music", notes[0])
         notes.pop(0)
