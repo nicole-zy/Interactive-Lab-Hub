@@ -119,31 +119,37 @@ x = 0
 y = top
 text = ''
 while True:
-    if not notes_rock_you:
-        display = "Song finished"
-        client.loop()
-    else:
-        display = notes
+    d = message
+    draw.text((x, y), d, font=font, fill="#FFFFFF")
+    y += font.getsize(d)[1]
+    disp.image(image, rotation)
+    time.sleep(1)
+	
+#     if not notes_rock_you:
+#         display = "Song finished"
+#         client.loop()
+#     else:
+#         display = notes
     
-    if message == 'Rock you':
-        for i in notes_rock_you:
-            text += str(i)
-        d = message
-        draw.text((x, y), d, font=font, fill="#FFFFFF")
-        y += font.getsize(d)[1]
-        disp.image(image, rotation)
-        time.sleep(1)
-        draw.rectangle((0, 0, width, height), outline=0, fill=0)
-        d = text
-        draw.text((x, y), d, font=font, fill="#FFFFFF")
-        y += font.getsize(d)[1]
-        disp.image(image, rotation)
-        time.sleep(0.1)
-        draw.rectangle((0, 0, width, height), outline=0, fill=0)
-#     draw.text((25, 5), display, font=font, fill="#0000FF")
-        if notes_rock_you:
-            client.publish("IDD/music", notes_rock_you[0])
-            notes_rock_you.pop(0)
+#     if message == 'Rock you':
+#         for i in notes_rock_you:
+#             text += str(i)
+#         d = message
+#         draw.text((x, y), d, font=font, fill="#FFFFFF")
+#         y += font.getsize(d)[1]
+#         disp.image(image, rotation)
+#         time.sleep(1)
+#         draw.rectangle((0, 0, width, height), outline=0, fill=0)
+#         d = text
+#         draw.text((x, y), d, font=font, fill="#FFFFFF")
+#         y += font.getsize(d)[1]
+#         disp.image(image, rotation)
+#         time.sleep(0.1)
+#         draw.rectangle((0, 0, width, height), outline=0, fill=0)
+# #     draw.text((25, 5), display, font=font, fill="#0000FF")
+#         if notes_rock_you:
+#             client.publish("IDD/music", notes_rock_you[0])
+#             notes_rock_you.pop(0)
 # this is blocking. to see other ways of dealing with the loop
 #  https://www.eclipse.org/paho/index.php?page=clients/python/docs/index.php#network-loop
 client.loop_forever()
