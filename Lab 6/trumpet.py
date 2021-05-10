@@ -124,7 +124,7 @@ while True:
         client.loop()
     else:
         display = notes
-    for i in notes:
+    for i in notes_rock_you:
         text += str(i)
     d = text
     draw.text((x, y), d, font=font, fill="#FFFFFF")
