@@ -13,7 +13,7 @@ import paho.mqtt.client as mqtt
 import uuid
 
 
-topic = 'IDD/music'
+topic = 'IDD/#'
 song = 0
 notes_rock_you = [1, 3, 2, 1]
 notes = []
