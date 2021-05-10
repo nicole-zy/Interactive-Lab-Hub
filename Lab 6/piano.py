@@ -106,8 +106,8 @@ while True:
     else:
         next_text = 'Play ' + str(music_script[0])
 
-    draw.rectangle((0, 0, oled.width, oled.height), outline=0, fill=0)
-    draw.text((25, 5), next_text, font=font, fill="#0000FF")
+#     draw.rectangle((0, 0, oled.width, oled.height), outline=0, fill=0)
+#     draw.text((25, 5), next_text, font=font, fill="#0000FF")
 #     oled.image(image)
     # show all the changes we just made
 #     oled.show()
