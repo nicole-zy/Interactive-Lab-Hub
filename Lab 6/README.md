@@ -86,13 +86,16 @@ Glitch is a great tool for prototyping sites, interfaces and web-apps that's wor
 Find at least one class (more are okay) partner, and design a distributed application together. 
 
 **1. Explain your design** For example, if you made a remote controlled banana piano, explain why anyone would want such a thing.
+
 Two friends are playing trumpet remotely for each other during quarantine. Due to the pandemic, the friends can't meet up and practice together, so they want to make the practice session remote.
 
 **2. Diagram the architecture of the system.** Be clear to document where input, output and computation occur, and label all parts and connections. For example, where is the banana, who is the banana player, where does the sound get played, and who is listening to the banana music?
+
 User1 is playing the trumpet (the colored buttons on the paper prototype), user2 is sitting far away and has a speaker next to him. When user1 plays the trumpet, user2 can hear the music from the speaker.
 
 
 **3. Build a working prototype of the system.** Do think about the user interface: if someone encountered these bananas, would they know how to interact with them? Should they know what to expect?
+
 On the prototype, there is an instructuion "PRESS" on the top and a drawing of a trumpet with the buttons detailed in colors, so the user would know to press the buttons to interact and would expect the sound to come out from the trumpet.
 
 **4. Document the working prototype in use.** It may be helpful to record a Zoom session where you should the input in one location clearly causing response in another location.
