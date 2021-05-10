@@ -121,7 +121,11 @@ while True:
         client.loop()
     else:
         display = notes
-
+    d = notes
+    draw.text((x, y), d, font=font, fill="#FFFFFF")
+    y = font.getsize(d)[1]
+    disp.image(image, rotation)
+    time.sleep(0.1)
     draw.rectangle((0, 0, width, height), outline=0, fill=0)
     draw.text((25, 5), display, font=font, fill="#0000FF")
     if notes:
