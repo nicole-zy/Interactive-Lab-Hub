@@ -109,6 +109,8 @@ mpr121 = adafruit_mpr121.MPR121(i2c)
 
 left = mpr121[6]
 right = mpr121[11]
+up = mpr121[1]
+down = mpr121[4]
 
 while True:
 #     for i in range(12):
@@ -116,16 +118,16 @@ while True:
 #             print(f"Banana {i} touched!")
 #     time.sleep(0.25)  # Small delay to keep from spamming output messages.
    
-    direction = random.randint(1, 2)
+    direction = random.randint(1, 4)
     if direction == 1:
         b = "left"
         draw.text((x, y), b, font=font, fill="#FFFFFF")
         y = font.getsize(b)[1]
         disp.image(image, rotation)
         time.sleep(0.1)
-        while not (left.value or right.value):
+        while not (left.value or right.value or up.value or down.value):
             time.sleep(0.01)
-        if right.value:
+        if right.value or up.value or down.value:
             draw.rectangle((0, 0, width, height), outline=0, fill=(0, 0, 0))
             disp.image(image, rotation)
             c = "\n Game Over"
@@ -136,15 +138,53 @@ while True:
             break
         draw.rectangle((0, 0, width, height), outline=0, fill=(0, 0, 0))
         disp.image(image, rotation)
-    else:
+    if direction == 2:
         d ="Right"
         draw.text((x, y), d, font=font, fill="#FFFFFF")
         y = font.getsize(d)[1]
         disp.image(image, rotation)
         time.sleep(0.1)
-        while not (left.value or right.value):
+        while not (left.value or right.value or up.value or down.value):
             time.sleep(0.01)
-        if left.value:
+        if left.value or up.value or down.value:
+            draw.rectangle((0, 0, width, height), outline=0, fill=(0, 0, 0))
+            disp.image(image, rotation)
+            e = "\n Game Over"
+            draw.text((x, y), e, font=font, fill="#C51A4A")
+            y += font.getsize(e)[1]
+            disp.image(image, rotation)
+            handle_speak("Game over")
+            break
+        draw.rectangle((0, 0, width, height), outline=0, fill=(0, 0, 0))
+        disp.image(image, rotation)
+    if direction == 3:
+        d ="Up"
+        draw.text((x, y), d, font=font, fill="#FFFFFF")
+        y = font.getsize(d)[1]
+        disp.image(image, rotation)
+        time.sleep(0.1)
+        while not (left.value or right.value or up.value or down.value):
+            time.sleep(0.01)
+        if left.value or right.value or down.value:
+            draw.rectangle((0, 0, width, height), outline=0, fill=(0, 0, 0))
+            disp.image(image, rotation)
+            e = "\n Game Over"
+            draw.text((x, y), e, font=font, fill="#C51A4A")
+            y += font.getsize(e)[1]
+            disp.image(image, rotation)
+            handle_speak("Game over")
+            break
+        draw.rectangle((0, 0, width, height), outline=0, fill=(0, 0, 0))
+        disp.image(image, rotation)
+    if direction == 4:
+        d ="Down"
+        draw.text((x, y), d, font=font, fill="#FFFFFF")
+        y = font.getsize(d)[1]
+        disp.image(image, rotation)
+        time.sleep(0.1)
+        while not (left.value or right.value or up.value or down.value):
+            time.sleep(0.01)
+        if left.value or up.value or right.value:
             draw.rectangle((0, 0, width, height), outline=0, fill=(0, 0, 0))
             disp.image(image, rotation)
             e = "\n Game Over"
