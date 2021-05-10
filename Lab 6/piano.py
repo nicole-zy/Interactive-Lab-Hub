@@ -25,7 +25,7 @@ font = ImageFont.truetype("/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf", 18)
 # Create the I2C interface.
 i2c = busio.I2C(board.SCL, board.SDA)
 
-mpr121 = adafruit_mpr121.MPR121(i2c)
+# mpr121 = adafruit_mpr121.MPR121(i2c)
 
 # Create the SSD1306 OLED class.
 # The first two parameters are the pixel width and pixel height.  Change these
@@ -111,6 +111,6 @@ while True:
     oled.image(image)
     # show all the changes we just made
     oled.show()
-    if music_script and mpr121[music_script[0] + 5].value:
+    if music_script:
         client.publish("IDD/John", music_script[0])
         music_script.popleft()
