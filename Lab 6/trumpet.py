@@ -115,7 +115,7 @@ def on_connect(client, userdata, flags, rc):
 
 draw.rectangle((0, 0, width, height), outline=0, fill=0)
 while True:
-    print('in loop')
+    print(notes)
     if not notes:
         display = "Song finished"
         client.loop()
