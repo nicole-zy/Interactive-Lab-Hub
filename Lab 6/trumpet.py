@@ -129,7 +129,7 @@ while True:
         client.loop()
     else:
         display = notes
-    client.publish("IDD/music", "Song Finished!")
+    client.publish("IDD/music", "Playing Song")
     if message == 'Rock you':
         for i in notes_rock_you:
             text += str(i)
