@@ -11,7 +11,7 @@ import busio
 import adafruit_mpr121
 import paho.mqtt.client as mqtt
 import uuid
-import pygame
+# import pygame
 
 
 topic = 'IDD/trumpet'
@@ -148,8 +148,8 @@ while True:
         draw.rectangle((0, 0, width, height), outline=0, fill=0)
 #     draw.text((25, 5), display, font=font, fill="#0000FF")
         if notes_rock_you:
-            pygame.mixer.music.load("rockyou.mp3")
-            pygame.mixer.music.play()
+#             pygame.mixer.music.load("rockyou.mp3")
+#             pygame.mixer.music.play()
             client.publish("IDD/music", notes_rock_you[0])
             notes_rock_you.pop(0)
 # this is blocking. to see other ways of dealing with the loop
