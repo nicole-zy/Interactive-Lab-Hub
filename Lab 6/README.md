@@ -97,6 +97,7 @@ User1 is playing the trumpet (the colored buttons on the paper prototype), user2
 
 **3. Build a working prototype of the system.** Do think about the user interface: if someone encountered these bananas, would they know how to interact with them? Should they know what to expect?
 
+![alt text](https://github.com/nicole-zy/Interactive-Lab-Hub/blob/Spring2021/Lab%206/1.png?width=1500&height=1100)
 On the prototype, there is an instructuion "PRESS" on the top and a drawing of a trumpet with the buttons detailed in colors, so the user would know to press the buttons to interact and would expect the sound to come out from the trumpet.
 
 **4. Document the working prototype in use.** It may be helpful to record a Zoom session where you should the input in one location clearly causing response in another location.
