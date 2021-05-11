@@ -102,4 +102,6 @@ On the prototype, there is an instructuion "PRESS" on the top and a drawing of a
 
 **4. Document the working prototype in use.** It may be helpful to record a Zoom session where you should the input in one location clearly causing response in another location.
 
+Our video: https://drive.google.com/file/d/15Xq9CfjMiq86YqD9FExXrGduRgCK1kUx/view?usp=sharing
+
 **5. BONUS (Wendy didn't approve this so you should probably ignore it)** get the whole class to run your code and make your distributed system BIGGER.
