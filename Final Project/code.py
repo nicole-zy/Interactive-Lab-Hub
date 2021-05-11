@@ -110,7 +110,7 @@ mpr121 = adafruit_mpr121.MPR121(i2c)
 left = mpr121[6]
 right = mpr121[11]
 up = mpr121[1]
-down = mpr121[4]
+down = mpr121[5]
 
 while True:
 #     for i in range(12):
