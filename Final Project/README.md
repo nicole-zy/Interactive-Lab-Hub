@@ -49,6 +49,8 @@ Here is the demo in action. https://drive.google.com/file/d/16Im6LzqkTqIcfEQMOxO
 
 You can and are not required to work in teams. Be clear in documentation who contributed what. The total project contributions should reflect the number of people on the project.
 
+Our team has Mehma Bhasin mkb229,Ahaan Parekh ap2397 and Nicole Zhang yz2778. Ahaan and Mehma were working on writing and advancing the code and Nicole was working on designing and making the prototype.
+
 ## Examples
 
 [Here is a list of good final projects from previous classes.](https://github.com/FAR-Lab/Developing-and-Designing-Interactive-Devices/wiki/Previous-Final-Projects)
