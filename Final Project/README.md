@@ -24,10 +24,10 @@ Your project is to design and build an interactive device to suit a specific app
 1. Documentation of design process
 
 We’ve created a DDR game. The easy setting is gentle enough for toddlers to play, so if they are just beginning to learn their directional signs. We’ve used sensors and the wires to facilitate capacitive touch, and we make use of the text to speech to have a voice read out the instructions, and let you know how well you are doing in the game. We’ve modeled this against the popular dance dance revolution games seen at many arcades. Only our version is the finger version, instead of the full body dance version. Players get three lives - once they hit three wrong moves, the game is over. 
-![alt text](https://github.com/nicole-zy/Interactive-Lab-Hub/blog/Spring2021/Final%20Project/1.png?width=1500&height=1100)
+![alt text](https://github.com/nicole-zy/Interactive-Lab-Hub/blob/Spring2021/Final%20Project/1.png?width=1500&height=1100)
 2. Archive of all code, design patterns, etc. used in the final design. (As with labs, the standard should be that the documentation would allow you to recreate your project if you woke up with amnesia.)
 The code we 
-![alt text](https://github.com/nicole-zy/Interactive-Lab-Hub/blog/Spring2021/Final%20Project/prototype.png?width=1500&height=1100)
+![alt text](https://github.com/nicole-zy/Interactive-Lab-Hub/blob/Spring2021/Final%20Project/prototype.png?width=1500&height=1100)
 3. Video of someone using your project (or as safe a version of that as can be managed given social distancing)
 
 We are demoing the one player version here - but the two player mode allows two players to rally against each other. 
